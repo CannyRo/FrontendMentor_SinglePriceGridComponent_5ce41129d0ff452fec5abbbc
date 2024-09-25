@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <main class="main">
+    <div class="container">
+      <section id="hero" class="hero">
+        <h1 class="title">Join our community</h1>
+        <h2 class="subtitle subtitle-green">30-day, hassle-free money back guarantee</h2>
+        <p class="text">Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.</p>
+      </section>
+      <section id="price" class="card card-green">
+        <h2 class="subtitle">Monthly Subscription</h2>
+        <p class="price--item"><span class="price--item-accent">&dollar;29</span>  per month</p>
+        <p class="text">Full access for less than &dollar;1 a day</p>
+        <button type="button" class="btn">Sign Up</button>
+      </section>
+      <section id="about" class="card card-light">
+        <h2 class="subtitle">Why Us</h2>
+        <ul class="list">
+          <li class="list--item">Tutorials by industry experts</li>
+          <li class="list--item">Peer &amp; expert code review</li>
+          <li class="list--item">Coding exercises</li>
+          <li class="list--item">Access to our GitHub repos</li>
+          <li class="list--item">Community forum</li>
+          <li class="list--item">Flashcard decks</li>
+          <li class="list--item">New videos every week</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+  <div class="footer__signature">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer--link">Frontend
+        Mentor</a>.</p>
+    <p>Coded by <a href="https://cannyro.github.io/hire_mr_canny/en" class="footer--link">WhatCannyDev</a>.</p>
+  </div>
   </footer>
 </body>
+
 </html>
