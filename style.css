@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    padding: 32px;
 }
 .container{
     display: grid;
@@ -34,8 +35,9 @@ body{
         "hero"
         "price"
         "about";
-    max-width: calc(100% - 64px);
-    max-height: fit-content;
+    width: 100%;
+    max-width: 635px;
+    height: fit-content;
     background-color: var(--White);
     background-color: var(--Cyan);
 }
@@ -114,7 +116,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 26px;
+    margin-top: 25px;
     height: 48px;
     font-size: 16px;
     line-height: 19px;
@@ -147,4 +149,37 @@ body{
     text-decoration: none;
     font-weight: 600;
     color: var(--Cyan);
+}
+@media(min-width: 768px){
+    .container{
+        grid-template-areas: 
+            "hero hero"
+            "price about";
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero{
+        padding: 40px;
+        background-color: var(--White);
+    }
+    .title{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.3px;
+    }
+    .subtitle{
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.22px;
+    }
+    .hero .subtitle{
+        margin-bottom: 11px;
+    }
+    .text{
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+    .card{
+        padding: 40px;
+    }
+    
 }
